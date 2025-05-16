@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #efefef;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 3.5em;
+  margin-bottom: 30px;
+  margin-top: -90px;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+.container{
+  width: 60vw;
+  height: 400px;
+  background-color: #F9F9F9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15px;
+  border-radius: 20px;
+  border: 2px dashed grey;
+}
+
+.container .left{
+  width: 45%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 15px 0px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, .1),
+  inset -2px -2px 15px rgba(255, 255, 255, .5);
+}
+
+.container .left .color{
+  background-color: greenyellow;
+  border-radius: 10px;
+  width: 90%;
+  height: 150px;
+  margin: 5%;
+  border: 1px solid #efefef;
+}
+
+.container .sliders{
+  width: 45%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, .1),
+  inset -2px -2px 15px rgba(255, 255, 255, .5);
+  font-weight: bold;
+}
+
+.container .sliders input{
+  margin: 5px 10px;
+}
+
+input[type="range"]{
+  -webkit-appearance: none;
+  background-color: #efefef;
+  width: 255px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #767676;
+  border-radius: 50%;
+  border: 3px solid #555;
+  box-shadow: -406px 0 0 400px var(--color);
+}
+
+.container .left .codes{
+  width: 90%;
+  height: 150px;
+  background-color: #efefef;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.codes #code{
+  margin: 20px 0;
+  font-family: monospace;
+  font-weight: 700;
+  letter-spacing: .1px;
+}
+
+
+.codes button{
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  font-weight: 700;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, .7);
+  color: #fff;
+  font-size: 18px;
+  font-family: monospace;
+}
